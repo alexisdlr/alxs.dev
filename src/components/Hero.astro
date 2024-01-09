@@ -1,0 +1,64 @@
+---
+import heroImg from "../images/hero-img.jpg";
+import { Image } from "astro:assets";
+import LinkedIn from "./Icons/LinkedIn";
+import GithubIcon from "./Icons/Github";
+import TwitterIcon from "./Icons/Twitter";
+---
+
+<div class="flex flex-col w-full">
+  <h1
+    class="font-black text-5xl lg:text-8xl my-4 text-transparent bg-clip-text bg-gradient-to-r from-slate-700 to-navy dark:text-darkText"
+    
+  >
+    Creative <br class="hidden lg:block">Developer
+  </h1>
+  <div
+    class="grid grid-rows-auto sm:grid-cols-2 gap-x-2 items-end my-2 sm:mb-10 w-full justify-center"
+  >
+    <div class="flex flex-col items-start justify-center w-full gap-y-2">
+      <figure>
+        <Image
+          src={heroImg}
+          alt={"Coahuila, Mexico"}
+          class="w-full lg:max-w-[480px] object-cover shadow-2xl rounded-md"
+        />
+        <span class="text-slate-700 dark:text-slate-300 text-sm"
+          >Coahuila, Mexico.</span
+        >
+      </figure>
+    </div>
+    <div class="my-3 flex flex-row lg:flex-col items-end justify-between lg:justify-center w-full font-mona-sans gap-3">
+      <div class="flex flex-col">
+        <h2
+        class="text-5xl lg:text-8xl text-right font-black text-slate-700 dark:text-darkText"
+      >
+        AlxsDev
+      </h2>
+      <p class="text-navy/50 my-2 dark:text-darkText/50">
+        I ❤️ Web Development.
+      </p>
+      </div>
+      <div class="flex items-center gap-x-4">
+        <a
+          class="p-3 rounded-full hover:bg-slate-400/15 transition-all"
+          href=""
+        >
+          <GithubIcon className={"size-10 text-slate-700 dark:text-darkText"} />
+        </a>
+        <a
+          class="p-3 rounded-full hover:bg-slate-400/15 transition-all"
+          href=""
+        >
+          <LinkedIn className={"size-10 text-slate-700 dark:text-darkText"} />
+        </a>
+        <a
+          class="p-3 rounded-full hover:bg-slate-400/15 transition-all"
+          href=""
+        >
+          <TwitterIcon className={"size-10 text-slate-700 dark:text-darkText"} />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import Logo from "./Logo.astro";
+import ThemeToggle from "./ThemeToggle";
+---
+
+<header
+  class="flex justify-center items-center mx-auto py-5 sticky top-0 w-full max-w-[22rem] xl:max-w-md z-10"
+>
+  <nav
+    class="w-full rounded-full px-3 py-1 flex justify-between flex-row items-center dark:bg-surface/20 bg-slate-700/10 backdrop-blur-md shadow-muted ring-2 ring-iris/10 dark:shadow-iris/10 shadow-xl"
+  >
+    <a href="/"><Logo class="size-10 rounded-full" /></a>
+    <ul class="flex gap-x-4 text-black">
+      <li
+        class="bg-transparent hover:bg-navy/10 dark:hover:bg-iris/10 px-2 py-1 rounded-full transition-all ease-in-out duration-500"
+      >
+        <HeaderLink
+          href="/"
+          class="font-semibold text-slate-700 dark:text-darkText"
+          aria-label="Home"
+        >
+          Home
+        </HeaderLink>
+      </li>
+      <li
+        class="bg-transparent hover:bg-navy/10 dark:hover:bg-iris/10 px-2 py-1 rounded-full transition-all ease-in-out duration-500"
+      >
+        <HeaderLink
+          href="/blog"
+          class="font-semibold text-slate-700 dark:text-darkText"
+        >
+          Blog
+        </HeaderLink>
+      </li>
+      <li
+        class="bg-transparent hover:bg-navy/10 dark:hover:bg-iris/10 px-2 py-1 rounded-full transition-all ease-in-out duration-500"
+      >
+        <HeaderLink
+          href="/about"
+          class="font-semibold text-slate-700 dark:text-darkText"
+        >
+          About
+        </HeaderLink>
+      </li>
+    </ul>
+    <div class="flex items-center">
+      <ThemeToggle client:load />
+    </div>
+  </nav>
+</header>
