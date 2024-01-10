@@ -1,8 +1,13 @@
 # Alexis De Leon - Web Developer
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+
+## Light Mode
 
 ![blog](/public/github/blog.png)
+
+## Dark Mode
+
+![blog](/public/github/blog-dark.png)
 
 Features:
 
