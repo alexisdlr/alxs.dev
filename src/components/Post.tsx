@@ -1,0 +1,52 @@
+interface PostProps {
+  post: {
+    link: string;
+    data: {
+      title: string;
+      description: string;
+      pubDate: Date;
+      updatedDate?: Date | undefined;
+      heroImage?: string;
+      category: string;
+      minRead?: string;
+    };
+  };
+}
+const Post = ({ post }: PostProps) => {
+  return (
+    <a
+      href={post.link}
+      class="flex items-center bg-iris/5 ring-navy/20 hover:bg-navy/10 hover:ring-navy text-text backdrop-blur-sm shadow-none ring-2 dark:ring-astro-pink/20 p-2 sm:gap-4 sm:p-5 dark:hover:bg-astro-pink/10 dark:hover:ring-astro-pink hover:shadow-xl dark:hover:shadow-astro-pink/50 rounded-lg transition-all ease-in-out duration-500 h-52 max-w-3xl"
+    >
+      <div>
+        <img
+          src={post.data.heroImage}
+          alt="logo"
+          class="size-28 object-contain rounded-md"
+        />
+      </div>
+      <div class="flex flex-col items-start gap-2 w-full">
+        <h4 class="font-semibold text-3xl text-slate-700 dark:text-darkText">
+          {post.data.title}
+        </h4>
+        <p class="text-base text-slate-600 dark:text-darkText">
+          {post.data.description}
+        </p>
+        <div class="flex w-full justify-between pr-4">
+          <p class="text-sm text-surface dark:text-darkText/90">
+            {post.data.pubDate.toLocaleDateString("en-us", {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+            })}
+          </p>
+          <p class="text-sm text-surface dark:text-darkText/90">
+            {post.data.minRead} min read
+          </p>
+        </div>
+      </div>
+    </a>
+  );
+};
+
+export default Post;

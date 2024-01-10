@@ -1,5 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import Post from "./Post";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
+
+const postsMapped = posts.map((p) => ({
+  link: "/blog/" + p.slug,
+  data: p.data,
+}));
+
+const latestPosts = postsMapped.slice().sort((a, b) => {
+  const dateA = new Date(a.data.pubDate);
+  const dateB = new Date(b.data.pubDate);
+  return dateB.getTime() - dateA.getTime();
+});
+
+const numLatestPostsToShow = 4; 
+const latestPostsToShow = latestPosts.slice(0, numLatestPostsToShow);
+
+---
 <section class="my-10">
   <h1 class="font-black text-5xl lg:text-7xl my-4 text-slate-700 dark:text-darkText">
     Latest Posts
   </h1>
+  <div class="grid grid-cols-2 gap-4">
+    {
+      latestPostsToShow.map(post => (
+        <Post post={post} />
+      ))
+    }
+  </div>
 </section>

@@ -1,15 +1,19 @@
-import { useState } from "preact/hooks";
-import CategoryItem from "./CategoryItem";
-const Categories = ({ categories }: { categories: { name: string }[] }) => {
-  const [activeCategory, setActiveCategory] = useState<null | string>(null)
-
-  const changeActiveCategory = (cat:string) => {
-    setActiveCategory(cat)
-  }
+interface CategoriesProps {
+  categories: string[];
+  onSelectCategory: (category: string) => void;
+}
+const Categories = ({ categories, onSelectCategory }: CategoriesProps) => {
   return (
     <div class={"flex gap-x-3"}>
       {categories.map((cat) => (
-        <CategoryItem category={cat} onClick={changeActiveCategory} />
+        <span
+          onClick={() => onSelectCategory(cat)}
+          class={
+            "px-3 cursor-pointer hover:ring-2 hover:ring-navy dark:hover:ring-iris transition-all py-1 bg-surface/10 rounded-full dark:bg-iris/10 text-slate-700 dark:text-darkText"
+          }
+        >
+          {cat}
+        </span>
       ))}
     </div>
   );

@@ -2,8 +2,9 @@
 title: 'Third post'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 15 2022'
-heroImage: '/logos/JavaScript.webp'
+heroImage: "/logos/React.webp"
 category: 'react'
+minRead: '4'
 
 ---
 
