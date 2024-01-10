@@ -26,10 +26,10 @@ const Post = ({ post }: PostProps) => {
         />
       </div>
       <div class="flex flex-col items-start gap-2 w-full">
-        <h4 class="font-semibold text-3xl text-slate-700 dark:text-darkText">
+        <h4 class="font-semibold text-2xl text-slate-700 dark:text-darkText">
           {post.data.title}
         </h4>
-        <p class="text-base text-slate-600 dark:text-iris/90">
+        <p class="text-sm text-slate-600 dark:text-iris/90">
           {post.data.description}
         </p>
         <div class="flex w-full justify-between pr-4">
