@@ -3,13 +3,35 @@ import Header from "../components/Header.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
-
-
+<div>
+  <svg
+    class="pointer-events-none fixed isolate z-50 opacity-80 mix-blend-soft-light [height:100lvh] w-full"
+    ><filter id="pedroduarteisalegend"
+      ><feTurbulence
+        type="fractalNoise"
+        baseFrequency="0.80"
+        numOctaves="4"
+        stitchTiles="stitch"></feTurbulence></filter
+    ><rect width="100%" height="100%" filter="url(#pedroduarteisalegend)"
+    ></rect></svg
+  >
+  <div class="pointer-events-none absolute z-10 inset-x-0 [height:100svh] flex items-center justify-center"> <div class="w-full h-24 bg-astro-blue/70 blur-[150px]"></div>
+</div>
+</div>
 <div
   class="fixed top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] dark:hidden"
 >
 </div>
-<div class="hidden dark:block fixed h-screen w-full bg-slate-950 -z-10"><div class="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div><div class="absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div></div>
+
+<div class="hidden dark:block fixed h-screen w-full bg-slate-900 -z-10">
+  <div
+    class="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(25,23,36,.15),rgba(25,0,182,0))]"
+  >
+  </div><div
+    class="absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(25,23,36,.4),rgba(255,255,255,0))]"
+  >
+  </div>
+</div>
 
 <Header title={SITE_TITLE} />
 <main class="w-full px-12 lg:px-0 lg:max-w-5xl mx-auto">

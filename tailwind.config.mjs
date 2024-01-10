@@ -10,7 +10,8 @@ export default {
 				'surface': "#1f1d2eb3",
 				'darkText': "#E0DEF4",
 				'iris': "#C4A7E7",
-				'astro-pink': "#F041FF"
+				'astro-pink': "#F041FF",
+				'astro-blue': "#3245ffcc"
 
 			}
 		},

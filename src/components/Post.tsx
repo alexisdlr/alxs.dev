@@ -29,18 +29,18 @@ const Post = ({ post }: PostProps) => {
         <h4 class="font-semibold text-3xl text-slate-700 dark:text-darkText">
           {post.data.title}
         </h4>
-        <p class="text-base text-slate-600 dark:text-darkText">
+        <p class="text-base text-slate-600 dark:text-iris/90">
           {post.data.description}
         </p>
         <div class="flex w-full justify-between pr-4">
-          <p class="text-sm text-surface dark:text-darkText/90">
+          <p class="text-xs text-surface/80 dark:text-darkText/80">
             {post.data.pubDate.toLocaleDateString("en-us", {
               year: "numeric",
               month: "short",
               day: "numeric",
             })}
           </p>
-          <p class="text-sm text-surface dark:text-darkText/90">
+          <p class="text-xs text-surface dark:text-darkText/90">
             {post.data.minRead} min read
           </p>
         </div>
