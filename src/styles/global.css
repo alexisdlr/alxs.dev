@@ -31,6 +31,7 @@ code {
 pre {
 	padding: 1.5em;
 	border-radius: 8px;
+	box-shadow: 1px 0px 40px 20px rgba(20, 0, 36, 0.2);
 }
 pre > code {
 	all: unset;

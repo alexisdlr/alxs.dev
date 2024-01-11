@@ -2,7 +2,7 @@
 const today = new Date();
 ---
 
-<footer class="text-slate-700 dark:text-darkText">
+<footer class="text-slate-700 flex max-w-5xl justify-between items-center mx-auto dark:text-darkText">
 	&copy; {today.getFullYear()} Alexis De Leon. All rights reserved.
 	<div class="social-links">
 		<a href="https://m.webtoo.ls/@astro" target="_blank">
@@ -41,7 +41,7 @@ const today = new Date();
 </footer>
 <style>
 	footer {
-		padding: 2em 1em 6em 1em;
+		padding: 2em 0em 6em 0em;
 		background: linear-gradient(var(--gray-gradient)) no-repeat;
 		color: rgb(var(--gray));
 		text-align: center;

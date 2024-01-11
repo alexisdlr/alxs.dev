@@ -16,7 +16,7 @@ const Post = ({ post }: PostProps) => {
   return (
     <a
       href={post.link}
-      class="flex items-center bg-iris/5 ring-navy/20 hover:bg-navy/10 hover:ring-navy text-text backdrop-blur-sm shadow-none ring-2 dark:ring-astro-pink/20 p-2 sm:gap-4 sm:p-5 dark:hover:bg-astro-pink/10 dark:hover:ring-astro-pink hover:shadow-xl dark:hover:shadow-astro-pink/50 rounded-lg transition-all ease-in-out duration-500 h-52 max-w-3xl"
+      class="flex items-center bg-iris/5 ring-navy/20 hover:bg-navy/10 hover:shadow-navy/50 hover:ring-navy text-text backdrop-blur-sm shadow-none ring-2 dark:ring-astro-pink/20 p-2 sm:gap-4 sm:p-5 dark:hover:bg-astro-pink/10 dark:hover:ring-astro-pink hover:shadow-xl dark:hover:shadow-astro-pink/50 rounded-lg transition-all ease-in-out duration-500 h-52 max-w-3xl"
     >
       <div>
         <img

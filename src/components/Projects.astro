@@ -1,0 +1,17 @@
+---
+import { projects } from "../consts";
+import Project from "./Project.astro";
+
+---
+<section class="mt-20">
+  <h1 class="font-black text-5xl lg:text-7xl my-4 text-slate-700 dark:text-darkText">
+    Selected Projects
+  </h1>
+  <div class="grid grid-cols-2 gap-4">
+    {
+      projects.map(post => (
+        <Project project={post} />
+      ))
+    }
+  </div>
+</section>
