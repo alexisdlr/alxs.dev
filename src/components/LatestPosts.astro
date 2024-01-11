@@ -25,7 +25,7 @@ const latestPostsToShow = latestPosts.slice(0, numLatestPostsToShow);
   <h1 class="font-black text-5xl lg:text-7xl my-4 text-slate-700 dark:text-darkText">
     Latest Posts
   </h1>
-  <div class="grid grid-cols-2 gap-4">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
     {
       latestPostsToShow.map(post => (
         <Post post={post} />

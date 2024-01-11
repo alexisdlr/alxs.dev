@@ -1,7 +1,7 @@
 ---
 title: 'Introduction to TypeScript'
 description: 'Discover the basic concepts and advantages of TypeScript, a superset of Javascript'
-pubDate: 'Jan 11 2025'
+pubDate: 'Jan 11 2024'
 heroImage: "/logos/typescript.webp"
 category: 'typescript'
 minRead: '7' 
