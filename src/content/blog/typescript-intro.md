@@ -8,7 +8,7 @@ minRead: '7'
 
 ---
 
-<h1 class='text-4xl font-black mt-20 mb-10 text-slate-700 dark:text-darkText/90'>Intro</h1>
+<h2 class='text-4xl font-black mt-20 mb-10 text-slate-700 dark:text-darkText/90'>Intro</h2>
 
 <p class='text-slate-700 dark:text-slate-100 mb-10 text-lg'><span class='font-italic text-navy/90 dark:text-iris font-semibold'>TypeScript</span> es un lenguaje de programación de código abierto desarrollado por Microsoft que se basa en <span class='font-italic text-yellow-700 dark:text-yellow-400 font-semibold'>JavaScript</span>. Se describe a menudo como un "superset" de <span class='font-italic text-yellow-700 dark:text-yellow-400 font-semibold'>JavaScript</span>, ya que añade características adicionales y está diseñado para ayudar en el desarrollo de aplicaciones más grandes y mantenibles. En este post, exploraremos los conceptos básicos de TypeScript y por qué puede ser beneficioso en tus proyectos.</p>
 

@@ -7,7 +7,7 @@ category: "javascript"
 minRead: "5"
 ---
 
-<h1 class='text-4xl font-black my-10 text-navy dark:text-darkText/90'>Intro</h1>
+<h2 class='text-4xl font-black my-10 text-navy dark:text-darkText/90'>Intro</h2>
 
 <p class='text-slate-700 dark:text-slate-100 mb-10 text-lg'>
   In this post, we will explore how to use localStorage in <span class='font-italic text-navy/90 dark:text-iris font-semibold'>localStorage</span> to store data persistently in the browser. <span class='font-italic text-navy/90 dark:text-iris font-semibold'>localStorage</span> is a simple but powerful API that allows you to store and retrieve key-value data locally in the user's browser.

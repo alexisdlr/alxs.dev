@@ -8,7 +8,7 @@ category: "react"
 
 ---
 
-<h1 class='text-4xl font-black my-12 text-slate-700 dark:text-darkText/90'>Intro</h1>
+<h2 class='text-4xl font-black my-12 text-slate-700 dark:text-darkText/90'>Intro</h2>
 
 <p class='text-slate-700 dark:text-slate-100 mb-10 text-lg'>In this article, I'd like to delve a little deeper into what are the <span class='text-astro-pink dark:text-iris font-semibold'>advantages and disadvantages</span> of both utilities. Whether you are an experienced React developer or new to state management, understanding these distinctions will allow you to make well-informed decisions for your projects. </p>
 
