@@ -18,14 +18,20 @@ interface FilteredPostsProps {
 const FilteredPosts = ({ posts, selectedCategory }: FilteredPostsProps) => {
   const filteredPosts = posts.filter(
     (post) => post.data.category === selectedCategory
-  ); 
+  );
   return (
     <ul>
-      {filteredPosts.map((post) => (
-        <li class="my-6">
-          <Post post={post} />
-        </li>
-      ))}
+      {selectedCategory.length > 0
+        ? filteredPosts.map((post) => (
+            <li class="my-6">
+              <Post post={post} />
+            </li>
+          ))
+        : posts.map((post) => (
+            <li class="my-6">
+              <Post post={post} />
+            </li>
+          ))}
     </ul>
   );
 };

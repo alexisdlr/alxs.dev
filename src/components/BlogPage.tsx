@@ -3,9 +3,11 @@ import Categories from "./Categories";
 import { getCollection } from "astro:content";
 import FilteredPosts from "./Posts";
 
-const posts = (await getCollection("blog")).sort(
-  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
-);
+const posts = (await getCollection("blog")).sort((a, b) => {
+  const dateA = new Date(a.data.pubDate);
+  const dateB = new Date(b.data.pubDate);
+  return dateB.getTime() - dateA.getTime();
+});
 
 const postsMapped = posts.map((p) => ({
   link: "/blog/" + p.slug,
@@ -13,7 +15,7 @@ const postsMapped = posts.map((p) => ({
 }));
 
 const BlogPage = () => {
-  const [activeCategory, setActiveCategory] = useState('react');
+  const [activeCategory, setActiveCategory] = useState('');
 
   const uniqueCategories = [
     ...new Set(posts.map((post) => post.data.category)),
