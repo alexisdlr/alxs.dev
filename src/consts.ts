@@ -4,7 +4,7 @@
 export const SITE_TITLE = 'Alexis De Leon - Blogsite';
 export const SITE_DESCRIPTION = 'Welcome to my personal blog, where you can find a lot content of Web technologies such as JavaScript, TypeScript, React.js, Next.js and much more!';
 import wordleImg from './images/wordle.png'
-import alxsound from './images/alxsound.png'
+import devjobs from './images/devjobs.png'
 
 export const projects = [
   {
@@ -22,16 +22,30 @@ export const projects = [
     ]
   },
   {
-    name: 'AlxSound', 
-    desc: 'App for listening music and upload songs online',
-    img: alxsound, 
-    code: 'https://github.com/alexisdlr/wordle',
-    demo: 'https://wordle-alxs.vercel.app/',
+    name: 'Devjobs', 
+    desc: 'This actual project is a challenge from @frontendmentor. This challenge consists of creating an application that extracts data from a local JSON file and renders it into a job listing.',
+    img: devjobs, 
+    code: 'https://github.com/alexisdlr/devjobs',
+    demo: 'https://devjobs-dun.vercel.app/',
     technologies: [
       
        'Next.js',
        'Zustand',
-       'Supabase'
+       'Tailwind'
+      
+    ]
+  },
+  {
+    name: 'Evently', 
+    desc: 'This actual project is a challenge from @frontendmentor. This challenge consists of creating an application that extracts data from a local JSON file and renders it into a job listing.',
+    img: devjobs, 
+    code: 'https://github.com/alexisdlr/devjobs',
+    demo: 'https://devjobs-dun.vercel.app/',
+    technologies: [
+      
+       'Next.js',
+       'Zustand',
+       'Tailwind'
       
     ]
   }
