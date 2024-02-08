@@ -4,7 +4,7 @@ interface CategoriesProps {
 }
 const Categories = ({ categories, onSelectCategory }: CategoriesProps) => {
   return (
-    <div class={"flex gap-x-3 gap-y-2 flex-wrap"}>
+    <div class={"hidden md:flex gap-x-3 gap-y-2 flex-wrap"}>
       <span
         onClick={() => onSelectCategory("")}
         class={

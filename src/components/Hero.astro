@@ -8,13 +8,12 @@ import TwitterIcon from "./Icons/Twitter";
 
 <div class="flex flex-col w-full">
   <h1
-    class="font-black text-5xl [font-stretch:ultra-expanded] leading-none lg:text-8xl lg:pr-40 my-4 text-transparent bg-clip-text bg-gradient-to-r from-slate-700 to-navy dark:text-darkText"
-    
+    class="font-black text-4xl md:text-5xl [font-stretch:ultra-expanded] leading-none lg:text-8xl lg:pr-40 my-4 text-transparent bg-clip-text bg-gradient-to-r from-slate-700 to-navy dark:text-darkText"
   >
     Creative Developer
   </h1>
   <div
-    class="grid grid-rows-auto sm:grid-cols-2 gap-x-2 items-end my-2 sm:mb-10 w-full justify-center"
+    class="grid grid-cols-1 sm:grid-cols-2 gap-x-2 items-end my-2 sm:mb-10 w-full justify-center"
   >
     <div class="flex flex-col items-start justify-center w-full gap-y-2">
       <figure>
@@ -28,16 +27,18 @@ import TwitterIcon from "./Icons/Twitter";
         >
       </figure>
     </div>
-    <div class="my-3 flex flex-row lg:flex-col items-end justify-between lg:justify-center w-full font-mona-sans gap-3">
-      <div class="flex flex-col">
+    <div
+      class="my-3 flex items-start flex-col md:flex-row lg:flex-col md:items-end justify-between lg:justify-center w-full font-mona-sans gap-3"
+    >
+      <div class="flex flex-col gap-5 ">
         <h2
-        class="text-5xl lg:text-8xl text-right font-black text-slate-700 dark:text-darkText"
-      >
-        AlxsDev
-      </h2>
-      <p class="text-navy/50 my-2 dark:text-darkText/50">
-        I ❤️ Web Development.
-      </p>
+          class="text-5xl lg:text-8xl text-right font-black text-slate-700 dark:text-darkText"
+        >
+          AlxsDev
+        </h2>
+        <p class="text-navy/50 my-2 dark:text-darkText/50">
+          I ❤️ Web Development.
+        </p>
       </div>
       <div class="flex items-center gap-x-4">
         <a
@@ -62,7 +63,9 @@ import TwitterIcon from "./Icons/Twitter";
           target="_blank"
           rel="noopener"
         >
-          <TwitterIcon className={"size-10 text-slate-700 dark:text-darkText"} />
+          <TwitterIcon
+            className={"size-10 text-slate-700 dark:text-darkText"}
+          />
         </a>
       </div>
     </div>

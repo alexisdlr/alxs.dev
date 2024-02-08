@@ -25,7 +25,7 @@ const BlogPage = () => {
   return (
     <section class={"flex gap-x-6"}>
       <FilteredPosts posts={postsMapped} selectedCategory={activeCategory} />
-      <div class="relative">
+      <div class="relative hidden md:block">
         <div class="sticky top-28">
           <h2 class="font-semibold text-3xl my-4 text-slate-700 dark:text-darkText">
             Categories

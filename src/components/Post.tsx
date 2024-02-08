@@ -22,11 +22,11 @@ const Post = ({ post }: PostProps) => {
         <img
           src={post.data.heroImage}
           alt="logo"
-          class="size-28 object-contain rounded-md"
+          class="size-24 lg:size-28 object-contain rounded-md"
         />
       </div>
       <div class="flex flex-col items-start gap-2 w-full">
-        <h4 class="font-semibold text-2xl text-slate-700 dark:text-darkText">
+        <h4 class="font-semibold text-md lg:text-2xl text-slate-700 dark:text-darkText">
           {post.data.title}
         </h4>
         <p class="text-sm text-slate-600 dark:text-iris/90">
