@@ -5,6 +5,7 @@ export const SITE_TITLE = 'Alexis De Leon - Blogsite';
 export const SITE_DESCRIPTION = 'Welcome to my personal blog, where you can find a lot content of Web technologies such as JavaScript, TypeScript, React.js, Next.js and much more!';
 import wordleImg from './images/wordle.png'
 import devjobs from './images/devjobs.png'
+import evently from './images/evently.png'
 
 export const projects = [
   {
@@ -38,13 +39,13 @@ export const projects = [
   {
     name: 'Evently', 
     desc: 'This actual project is a challenge from @frontendmentor. This challenge consists of creating an application that extracts data from a local JSON file and renders it into a job listing.',
-    img: devjobs, 
-    code: 'https://github.com/alexisdlr/devjobs',
-    demo: 'https://devjobs-dun.vercel.app/',
+    img: evently, 
+    code: 'https://github.com/alexisdlr/evently-nextjs',
+    demo: 'https://evently-nextjs-five.vercel.app',
     technologies: [
       
        'Next.js',
-       'Zustand',
+       'MongoDB',
        'Tailwind'
       
     ]

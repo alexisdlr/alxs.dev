@@ -17,8 +17,8 @@ const { title, description, pubDate, updatedDate, heroImage, minRead } = Astro.p
   <body>
     <Layout>
       <article>
-        <div class="px-24">
-          <div class="flex gap-x-3 items-center my-14">
+        <div class="px-2 md:px-24">
+          <div class="flex flex-col gap-y-3 md:flex-row gap-x-3 items-center my-14">
             {
               heroImage && (
                 <img
@@ -28,9 +28,9 @@ const { title, description, pubDate, updatedDate, heroImage, minRead } = Astro.p
                 />
               )
             }
-            <div class="flex flex-col gap-2">
+            <div class="flex items-center md:items-start flex-col gap-2">
               <h1
-                class="text-slate-700 dark:text-darkText text-4xl font-black text-left"
+                class="text-slate-700 text-xl dark:text-darkText md:text-4xl font-black text-center md:text-left"
               >
                 {title}
               </h1>
