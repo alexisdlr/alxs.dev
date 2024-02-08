@@ -38,7 +38,7 @@ export const projects = [
   },
   {
     name: 'Evently', 
-    desc: 'This actual project is a challenge from @frontendmentor. This challenge consists of creating an application that extracts data from a local JSON file and renders it into a job listing.',
+    desc: 'Event organization Web App like Eventbrite or Meetup with authentication, event management, search, filtering, categories, checkout, and payments using Next JS 14, Tailwind CSS, Shadcn, React Hook Form, Zod, Uploadthing, React-Datepicker, Mongoose, Clerk, and Stripe.',
     img: evently, 
     code: 'https://github.com/alexisdlr/evently-nextjs',
     demo: 'https://evently-nextjs-five.vercel.app',
