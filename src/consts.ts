@@ -4,10 +4,26 @@
 export const SITE_TITLE = 'Alexis De Leon - Blogsite';
 export const SITE_DESCRIPTION = 'Welcome to my personal blog, where you can find a lot content of Web technologies such as JavaScript, TypeScript, React.js, Next.js and much more!';
 import wordleImg from './images/wordle.png'
+import quizz from './images/quizz.png'
 import devjobs from './images/devjobs.png'
 import evently from './images/evently.png'
 
 export const projects = [
+  {
+    name: 'Frontend Quizz App', 
+    desc: 'Frontend Quiz App built with NextJs, Tailwind CSS. This app is a quiz app that allows users to answer questions from different categories and difficulties.',
+    img: quizz, 
+    code: 'https://github.com/alexisdlr/frontend-quizz-app',
+    demo: 'https://frontend-quizz-app-five.vercel.app/',
+    technologies: [
+      
+       'NextJs',
+       'TypeScript',
+       'Zustand',
+       'Tailwind CSS'
+      
+    ]
+  },
   {
     name: 'Wordle', 
     desc: 'A web application of a fully functional clone of the popular "wordle" game built with React.js.',
