@@ -12,7 +12,6 @@ import { AnimatedHeader } from "./animated/header";
   <nav
     class="w-full rounded-xl px-2 sm:px-3 py-1 flex justify-between flex-row items-center dark:bg-surface/20 bg-slate-700/10 backdrop-blur-md shadow-muted ring-2 ring-iris/10 dark:shadow-astro-pink/10 shadow-xl"
   >
-    <a href="/"><Logo class="size-10 rounded-full" /></a>
     <ul class="flex gap-x-2 sm:gap-x-4 text-xs sm:text-sm">
       <li
         class="bg-transparent hover:bg-navy/10 dark:hover:bg-iris/10 px-2 py-1 rounded-full transition-all ease-in-out duration-500"
@@ -36,13 +35,23 @@ import { AnimatedHeader } from "./animated/header";
         </HeaderLink>
       </li>
       <li
+      class="bg-transparent hover:bg-navy/10 dark:hover:bg-iris/10 px-2 py-1 rounded-full transition-all ease-in-out duration-500"
+    >
+      <HeaderLink
+        href="/about"
+        class="font-semibold uppercase text-slate-700 dark:text-darkText"
+      >
+        Projects
+      </HeaderLink>
+    </li>
+      <li
         class="bg-transparent hover:bg-navy/10 dark:hover:bg-iris/10 px-2 py-1 rounded-full transition-all ease-in-out duration-500"
       >
         <HeaderLink
           href="/about"
           class="font-semibold uppercase text-slate-700 dark:text-darkText"
         >
-          About
+          Who I am
         </HeaderLink>
       </li>
     </ul>
