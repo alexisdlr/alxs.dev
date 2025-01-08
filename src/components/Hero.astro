@@ -4,9 +4,10 @@ import { Image } from "astro:assets";
 import LinkedIn from "./Icons/LinkedIn";
 import GithubIcon from "./Icons/Github";
 import TwitterIcon from "./Icons/Twitter";
+import { AnimatedBox } from "./animated/box";
 ---
 
-<div class="flex flex-col w-full">
+<AnimatedBox className="flex flex-col w-full" client:only="react">
   <h1
     class="font-black text-4xl md:text-5xl [font-stretch:ultra-expanded] leading-none lg:text-8xl lg:pr-40 my-4 text-transparent bg-clip-text bg-gradient-to-r from-slate-700 to-navy dark:text-darkText"
   >
@@ -30,13 +31,15 @@ import TwitterIcon from "./Icons/Twitter";
     <div
       class="my-3 flex items-end flex-col md:flex-row lg:flex-col md:items-end justify-between lg:justify-center w-full font-mona-sans gap-3"
     >
-      <div class="flex flex-col gap-2 md:gap-5 ">
+      <div class="flex flex-col gap-2 md:gap-5">
         <h2
           class="text-4xl md:text-5xl lg:text-8xl text-right font-black text-slate-700 dark:text-darkText"
         >
           AlxsDev
         </h2>
-        <p class="text-navy/50 my-2 text-right md:text-start dark:text-darkText/50">
+        <p
+          class="text-navy/50 my-2 text-right md:text-start dark:text-darkText/50"
+        >
           I ❤️ Web Development.
         </p>
       </div>
@@ -47,7 +50,9 @@ import TwitterIcon from "./Icons/Twitter";
           target="_blank"
           rel="noopener"
         >
-          <GithubIcon className={"size-5 md:size-10 text-slate-700 dark:text-darkText"} />
+          <GithubIcon
+            className={"size-5 md:size-10 text-slate-700 dark:text-darkText"}
+          />
         </a>
         <a
           class="p-3 rounded-full hover:bg-slate-400/15 transition-all"
@@ -55,7 +60,9 @@ import TwitterIcon from "./Icons/Twitter";
           target="_blank"
           rel="noopener"
         >
-          <LinkedIn className={"size-5 md:size-10 text-slate-700 dark:text-darkText"} />
+          <LinkedIn
+            className={"size-5 md:size-10 text-slate-700 dark:text-darkText"}
+          />
         </a>
         <a
           class="p-3 rounded-full hover:bg-slate-400/15 transition-all"
@@ -70,4 +77,4 @@ import TwitterIcon from "./Icons/Twitter";
       </div>
     </div>
   </div>
-</div>
+</AnimatedBox>
