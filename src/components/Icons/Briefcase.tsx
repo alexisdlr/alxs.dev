@@ -1,6 +1,6 @@
-import { Briefcase } from 'lucide-preact'
+import { Briefcase } from 'lucide-react'
 const BriefcaseIcon = ({className}: {className: string}) => {
-  return ( <Briefcase class={className} /> );
+  return ( <Briefcase className={className} /> );
 }
  
 export default BriefcaseIcon;

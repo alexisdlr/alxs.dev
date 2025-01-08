@@ -23,12 +23,12 @@ const FilteredPosts = ({ posts, selectedCategory }: FilteredPostsProps) => {
     <ul>
       {selectedCategory.length > 0
         ? filteredPosts.map((post) => (
-            <li class="my-6">
+            <li className="my-6">
               <Post post={post} />
             </li>
           ))
         : posts.map((post) => (
-            <li class="my-6">
+            <li className="my-6">
               <Post post={post} />
             </li>
           ))}

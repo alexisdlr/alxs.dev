@@ -1,7 +1,7 @@
-import { Linkedin } from "lucide-preact";
+import { Linkedin } from "lucide-react";
 
 const LinkedIn = ({className}: {className: string}) => {
-  return ( <Linkedin class={className}  /> );
+  return ( <Linkedin className={className}  /> );
 }
  
 export default LinkedIn;

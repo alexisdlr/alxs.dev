@@ -1,7 +1,7 @@
-import { Code } from "lucide-preact";
+import { Code } from "lucide-react";
 
 const CodeIcon = ({className}: {className: string}) => {
-  return ( <Code class={className} /> );
+  return ( <Code className={className} /> );
 }
  
 export default CodeIcon;

@@ -31,7 +31,7 @@ interface TechnologyProps {
       <p class="lg:text-sm text-left text-xs text-surface/80 dark:text-darkText">
         {project.desc}
       </p>
-      <div class="flex w-full items-center justify-between mt-4 gap-x-4">
+      <div class="flex w-full items-center justify-between mt-4 py-2 gap-x-4">
         <div class="flex gap-x-1 gap-y-2 flex-wrap">
           {
             project.technologies.map((item: TechnologyProps) => (
@@ -39,8 +39,9 @@ interface TechnologyProps {
             ))
           }
         </div>
-        <div>
-          <a href={project.code} target="_blank" class="flex items-center gap-x-1 px-2 py-1 rounded-full text-sm font-semibold text-slate-700 bg-slate-400/25 dark:text-darkText transition-all "><CodeIcon className="size-4" /><span>View code</span></a>
+        <div class="text-slate-700 dark:text-darkText font-semibold w-[120px] flex justify-center items-center gap-x-1 px-2 py-1 rounded-full bg-slate-400/25 max-h-10 md:max-h-full transition-all">
+          <CodeIcon className="size-4 md:size-6" />
+          <a href={project.code} target="_blank" class="text-[10px] sm:text-sm text-center">View code</a>
         </div>
       </div>
     </div>

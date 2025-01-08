@@ -1,7 +1,7 @@
-import { Twitter } from "lucide-preact";
+import { Twitter } from "lucide-react";
 
 const TwitterIcon = ({className}: {className: string}) => {
-  return ( <Twitter class={className} /> );
+  return ( <Twitter className={className} /> );
 }
  
 export default TwitterIcon;

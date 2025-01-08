@@ -1,7 +1,7 @@
-import { Github } from "lucide-preact";
+import { Github } from "lucide-react";
 
 const GithubIcon = ({className}: {className: string}) => {
-  return <Github class={className} />;
+  return <Github className={className} />;
 };
 
 export default GithubIcon;

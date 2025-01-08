@@ -1,7 +1,7 @@
-import { SunIcon } from "lucide-preact";
+import { SunIcon } from "lucide-react";
 
-const Sun = () => {
-  return ( <SunIcon  /> );
+const Sun = ({className}: {className?: string}) => {
+  return ( <SunIcon className={className} /> );
 }
  
 export default Sun;

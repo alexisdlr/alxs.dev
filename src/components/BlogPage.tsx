@@ -1,4 +1,4 @@
-import { useState } from "preact/hooks";
+import { useState } from "react";
 import Categories from "./Categories";
 import { getCollection } from "astro:content";
 import FilteredPosts from "./Posts";
@@ -23,11 +23,11 @@ const BlogPage = () => {
   
 
   return (
-    <section class={"flex gap-x-6"}>
+    <section className={"flex gap-x-6"}>
       <FilteredPosts posts={postsMapped} selectedCategory={activeCategory} />
-      <div class="relative hidden md:block">
-        <div class="sticky top-28">
-          <h2 class="font-semibold text-3xl my-4 text-slate-700 dark:text-darkText">
+      <div className="relative hidden md:block">
+        <div className="sticky top-28">
+          <h2 className="font-semibold text-3xl my-4 text-slate-700 dark:text-darkText">
             Categories
           </h2>
           <Categories
