@@ -16,7 +16,7 @@ export default function ThemeDropdown() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" className='border-iris border bg-transparent hover:bg-navy/10 dark:hover:bg-iris/10' size="icon">
+        <Button variant="ghost" className='border-navy border bg-transparent hover:bg-navy/10 dark:hover:bg-iris/10 dark:border-iris' size="icon">
           <SunIcon className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
           <MoonIcon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
           <span className="sr-only">Toggle theme</span>
